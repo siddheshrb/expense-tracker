@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Data
 @NoArgsConstructor
@@ -16,6 +17,7 @@ public class Category {
     @Id
     private Long id;
 
+    @NotNull
     private String name;
 
 }
